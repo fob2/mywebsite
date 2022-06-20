@@ -153,7 +153,7 @@ img{
     right: 0;
 }
 
-/*Active menu*/
+
 .active::after{
     position: absolute;
     content: "";

@@ -6,10 +6,6 @@
         <div class="home__container bd-grid">
             <h1 class="home__title"><span>Hi</span><br>I'm Fin</h1>
 
-           <!--  <div class="home__scroll">
-                <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
-            </div> -->
-
         </div>
     </section>
     
@@ -18,8 +14,8 @@
         <h2 class="section-title">About Me</h2>
 
         <div class="about__container bd-grid">
-            <div class="about__img">
-                <img src="{{ about.image }}" alt="">
+            <div class="skills__img">
+                <img src="static/images/about_image.jpg" alt="">
             </div>
 
             <div>
@@ -100,7 +96,7 @@
         <div class="contact__container bd-grid">
             <div class="contact__info">
                 <h3 class="contact__subtitle">EMAIL</h3>
-                <span class="contact__text">finbarrobrien@live.com</span>
+                <span class="contact__text">finbarrobrien95@gmail.com</span>
 
                 <h3 class="contact__subtitle">PHONE</h3>
                 <span class="contact__text">+44 78575 29241</span>
@@ -109,13 +105,13 @@
                 <span class="contact__text">Birmingham</span>
             </div>
 
-            <form action="" class="contact__form">
+            <form action="https://formspree.io/f/xqknoear" method="POST" class="contact__form">
                 <div class="contact__inputs">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
+                    <input type="text" name="Name" placeholder="Full Name" class="contact__input" required>
+                    <input type="email" name="Email" placeholder="Email" class="contact__input" required>
                 </div>
 
-                <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                <textarea name="Description" cols="0" rows="10" class="contact__input" required></textarea>
 
                 <input type="submit" value="Send" class="contact__button">
             </form>
