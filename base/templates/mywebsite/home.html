@@ -1,0 +1,126 @@
+{% extends 'mywebsite/base.html' %}
+
+{% block content %}
+<main class="l-main">
+    <section class="home" id="home">
+        <div class="home__container bd-grid">
+            <h1 class="home__title"><span>Hi</span><br>I'm Fin</h1>
+
+           <!--  <div class="home__scroll">
+                <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+            </div> -->
+
+        </div>
+    </section>
+    
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="{{ about.image }}" alt="">
+            </div>
+
+            <div>
+                <p class="about__text">{{ about.description }}</p>
+                <p class="about__text">Use the buttons below to visit my social pages and download my CV.</p>
+
+                <div class="about__social">
+                    <a href="https://linkedin.com/in/finbarr-obrien-jeme" target="_blank" class="about__social-icon" ><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://github.com/fob2" target="_blank" class="about__social-icon" ><i class='bx bxl-github' ></i></a>
+                    <a href="static/CV.pdf" class="about__social-icon" download><i class="bx bx-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+            <div class="skills__box">
+                <h3 class="skills__subtitle">Development</h3>
+                <span class="skills__name">HTML</span>
+                <span class="skills__name">CSS</span>
+                <span class="skills__name">Javascript</span>
+                <span class="skills__name">Python</span>
+                <span class="skills__name">SQL</span>
+                
+                <h3 class="skills__subtitle">GIS</h3>
+                <span class="skills__name">QGIS</span>
+                <span class="skills__name">CAD</span>
+                <span class="skills__name">ArcGIS</span>
+                <span class="skills__name">ERDAS Imagine</span>
+            </div>
+
+            <div class="skills__img">
+                <img src="static/images/skills_image.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--===== PORTFOLIO =====-->
+    <section class="portfolio section" id="portfolio">
+        <h2 class="section-title">Portfolio</h2>
+
+        <div class="portfolio__container bd-grid">
+            <div class="portfolio__img">
+                <img src="static/images/ingredient_tracker.png" alt="">
+
+                <div class="portfolio__link">
+                    <a href="https://github.com/fob2/Ingredient-Tracker" target="_blank" class="portfolio__link-name">View details</a>
+                </div>
+            </div>
+            <div class="portfolio__img">
+                <img src="static/images/to_do.png" alt="">
+
+                <div class="portfolio__link">
+                    <a href="https://github.com/fob2/todo_list" target="_blank" class="portfolio__link-name">View details</a>
+                </div>
+            </div>
+            <div class="portfolio__img">
+                <img src="static/images/weather_app.png" alt="">
+
+                <div class="portfolio__link">
+                    <a href="https://github.com/fob2/weather_app" target="_blank" class="portfolio__link-name">View details</a>
+                </div>
+            </div>
+            
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+            <div class="contact__info">
+                <h3 class="contact__subtitle">EMAIL</h3>
+                <span class="contact__text">finbarrobrien@live.com</span>
+
+                <h3 class="contact__subtitle">PHONE</h3>
+                <span class="contact__text">+44 78575 29241</span>
+
+                <h3 class="contact__subtitle">Location</h3>
+                <span class="contact__text">Birmingham</span>
+            </div>
+
+            <form action="" class="contact__form">
+                <div class="contact__inputs">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                </div>
+
+                <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                <input type="submit" value="Send" class="contact__button">
+            </form>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
